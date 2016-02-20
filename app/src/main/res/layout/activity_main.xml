@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:gravity="center">
+
+
+
+  <EditText
+    android:id="@+id/editText1"
+    android:hint="源wav文件的路径"
+    android:text="/storage/emulated/legacy/beyondboy.wav"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+  </EditText>
+
+  <EditText
+    android:id="@+id/editText2"
+    android:hint="目标MP3文件的路径"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:text="/storage/emulated/legacy/beyondboy.mp3"
+    android:layout_height="wrap_content" />
+<LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_horizontal"
+  >
+  <Button
+    android:id="@+id/button1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="转化"
+    android:onClick="convert"
+    />
+  <Button
+    android:id="@+id/button3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="删除mp3文件"
+    android:onClick="convert"
+    />
+  <Button
+    android:id="@+id/button4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="详细转化信息"
+    android:onClick="convert"
+    />
+</LinearLayout>
+  <Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="获取lame版本号"
+    android:onClick="getversion"
+    />
+
+</LinearLayout>
